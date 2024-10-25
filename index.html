@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<script>
+    function load() {
+        document.getElementById("iframe").src = new URLSearchParams(window.location.search).get("url");
+    }
+</script>
+<body onload="load()">
+    <iframe id="iframe" sandbox="allow-scripts allow-same-origin allow-top-navigation"></iframe></div>
+</body>
+</html>
