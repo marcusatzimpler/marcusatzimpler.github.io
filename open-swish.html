@@ -8,11 +8,11 @@
 <script>
     function load() {
         setTimeout(() => {
-            document.getElementById("iframe").src = new URLSearchParams(window.location.search).get("url");
+            location.href = 'swish://paymentrequest'
         }, 2000);
     }
 </script>
 <body onload="load()">
-    <iframe id="iframe"></iframe></div>
+    ON OPEN SWISH
 </body>
 </html>
